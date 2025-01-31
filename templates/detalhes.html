@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Moto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Detalhes da Moto</h1>
+    <p><strong>Placa:</strong> {{ moto.placa }}</p>
+    <p><strong>Modelo:</strong> {{ moto.modelo }}</p>
+    <p><strong>Ano:</strong> {{ moto.ano }}</p>
+    <p><strong>Defeitos:</strong> {{ moto.defeitos }}</p>
+    <p><strong>Peças Faltando:</strong> {{ moto.pecas_faltando }}</p>
+    <a href="{{ url_for('index') }}" class="btn">Voltar</a>
+</body>
+</html>
